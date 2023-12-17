@@ -15,4 +15,23 @@
 .container {
     display: flex;
     align-items: center;
+    position: relative;
+}
+
+.container__image {
+    padding: 1em;
+}
+
+.container__botao-menu {
+    display: none;
+}
+
+.container__botao-menu:checked~.lista-menu {
+    display: block;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
 }
